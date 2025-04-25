@@ -1,0 +1,9 @@
+﻿  ex.cpp
+  idz.cpp
+D:\Microsoft Visual Studio\Community\Progects\IDZ6\idz.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\Microsoft Visual Studio\Community\Progects\IDZ6\idz.cpp(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\Microsoft Visual Studio\Community\Progects\IDZ6\idz.cpp(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\Microsoft Visual Studio\Community\Progects\IDZ6\idz.cpp(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\Microsoft Visual Studio\Community\Progects\IDZ6\idz.cpp(5,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Создание кода...
+  IDZ6.vcxproj -> D:\Microsoft Visual Studio\Community\Progects\IDZ6\x64\Debug\IDZ6.exe
