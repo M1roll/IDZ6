@@ -13,7 +13,7 @@ struct Records {
 	string callType;
 
 };
-int TimeInSeconds(string &str) {
+int TimeInSeconds(string& str) {
 	return stoi(str.substr(0, 2)) * 3600 + stoi(str.substr(3, 2)) * 60 + stoi(str.substr(6, 2));
 }
 
@@ -34,6 +34,7 @@ int main() {
 	string line;
 	string number;
 	bool isEmpty = true;
+	bool isCorrect = false;
 	set<char> allowedChar = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
 	if (!file.is_open()) {
@@ -69,7 +70,7 @@ int main() {
 		count++;
 	};
 	count = 0;
-	std:: cout << "Enter phone number: ";
+	std::cout << "Enter phone number: ";
 	cin >> number;
 
 	for (char c : number) {
@@ -82,11 +83,14 @@ int main() {
 			return 0;
 		}
 	}
-	
-	
+
+
 	file.close();
+
+
 	for (int i = 0; i < 10; i++) {
 		if (call[i].phone == number) {
+			isCorrect = true;
 			cntCallsNumber++;
 			startTime = TimeInSeconds(call[i].timeStart);
 			endTime = TimeInSeconds(call[i].timeEnd);
@@ -95,15 +99,15 @@ int main() {
 			}
 			if (call[i].callType == "ishodyashi") {
 				callTimeIs += endTime - startTime;
-				
 			}
-		}
-		else {
-			cout << "Invalid";
-			return 0;
+
 		}
 	}
-	
+	if (isCorrect == false) {
+		cout << "Invalid";
+		return 0;
+	}
+
 	for (int i = 0; i < 10; i++) {
 		startTime = TimeInSeconds(call[i].timeStart);
 		endTime = TimeInSeconds(call[i].timeEnd);
