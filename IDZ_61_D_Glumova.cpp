@@ -99,7 +99,7 @@ int main() {
 			}
 		}
 		else {
-			cout << "Imvalid";
+			cout << "Invalid";
 			return 0;
 		}
 	}
